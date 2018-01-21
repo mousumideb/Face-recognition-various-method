@@ -1,0 +1,488 @@
+%%
+clc
+clear all
+%%%
+
+
+%MATLAB code
+folder = './trainatt/';
+what  = 'pgm';
+% gg =23;
+names1 = dir([folder '*.' what]);
+% input_image = imread([folder names1(1).name]);
+
+N=64;
+% srcFiles = dir('./trainatt/')
+I = imread([folder names1(1).name]); %read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w1i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(2).name]); %read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w2i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+%MATLAB code
+I = imread([folder names1(3).name]); %read the image   %read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w3i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(4).name]);%read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w4i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(5).name]);%read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w5i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+
+
+%MATLAB code
+I = imread([folder names1(6).name]);%read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w6i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(7).name]);%read the image  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w7i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+%MATLAB code
+I = imread([folder names1(8).name]);%read the image
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w8i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(9).name]);%read the imagee  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w9i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(10).name]);%read the imagee  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w10i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+%MATLAB code
+I = imread([folder names1(11).name]);%read the imagee  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w11i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(12).name]);%read the imagee  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w12i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+
+%MATLAB code
+I = imread([folder names1(13).name]);%read the imagee  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w13i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(14).name]);%read the imagee  
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w14i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+
+
+%MATLAB code
+I = imread([folder names1(15).name]);%read the imagee    
+% I = rgb2gray(rgb);%convert the RGB to gray scale image
+I=imresize(I,[N N],'bilinear');
+
+n=1;
+for i = 1:N
+for j = 1:N
+w15i(n) = I(i,j);
+n=n+1;
+end
+end
+
+
+% %MATLAB code
+% I = imread([folder names1(16).name]);%read the imagee   
+% % I = rgb2gray(rgb);%convert the RGB to gray scale image
+% I=imresize(I,[N N],'bilinear');
+% 
+% n=1;
+% for i = 1:N
+% for j = 1:N
+% w16i(n) = I(i,j);
+% n=n+1;
+% end
+% end
+
+
+
+
+Shi=(w1i+w2i+w3i+w4i+w5i+w6i+w7i+w8i+w9i+w10i+w11i+w12i+w13i+w14i+w15i)/15;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Average image
+img_ave=reshape(Shi,N,N);
+img_ave=transpose(img_ave);
+imshow(img_ave)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Phi1=w1i-Shi;
+Phi2=w2i-Shi;
+Phi3=w3i-Shi;
+Phi4=w4i-Shi;
+Phi5=w5i-Shi;
+Phi6=w6i-Shi;
+Phi7=w7i-Shi;
+Phi8=w8i-Shi;
+Phi9=w9i-Shi;
+Phi10=w10i-Shi;
+Phi11=w11i-Shi;
+Phi12=w12i-Shi;
+Phi13=w13i-Shi;
+Phi14=w14i-Shi;
+Phi15=w15i-Shi;
+% Phi16=w16i-Shi;
+
+
+
+X=[transpose(Phi1) transpose(Phi2) transpose(Phi3)  transpose(Phi4)  transpose(Phi5)  transpose(Phi6) transpose(Phi7)  transpose(Phi8) transpose(Phi9)  transpose(Phi10) transpose(Phi11) transpose(Phi12)  transpose(Phi13) transpose(Phi14)  transpose(Phi15)];
+Y=double(X);
+
+C=(Y)*(transpose(Y));
+[V,D]= eig(C);
+
+
+% figure(2)
+% %Eigen faces
+% subplot(3,3,1)
+% img=reshape(V(:,1),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% 
+% subplot(3,3,2)
+% img=reshape(V(:,2),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% 
+% subplot(3,3,3)
+% img=reshape(V(:,3),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% subplot(3,3,4)
+% img=reshape(V(:,4),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% subplot(3,3,5)
+% img=reshape(V(:,5),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% 
+% subplot(3,3,6)
+% img=reshape(V(:,6),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% subplot(3,3,7)
+% img=reshape(V(:,7),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% subplot(3,3,8)
+% img=reshape(V(:,8),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+% 
+% subplot(3,3,9)
+% img=reshape(V(:,9),N,N);
+% img=img';
+% img=histeq(img,255);
+% imshow(img)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+V1=double(V(:,1));
+Phi1=double(Phi1);
+Omega1=Phi1*V1;
+
+V2=double(V(:,2));
+Phi2=double(Phi2);
+Omega2=Phi2*V2;
+
+V3=double(V(:,3));
+Phi3=double(Phi3);
+Omega3=Phi3*V3;
+
+
+V4=double(V(:,4));
+Phi4=double(Phi4);
+Omega4=Phi4*V4;
+
+V5=double(V(:,5));
+Phi5=double(Phi5);
+Omega5=Phi5*V5;
+
+V6=double(V(:,6));
+Phi6=double(Phi6);
+Omega6=Phi6*V6;
+
+V7=double(V(:,7));
+Phi7=double(Phi7);
+Omega7=Phi7*V7;
+
+
+V8=double(V(:,8));
+Phi8=double(Phi8);
+Omega8=Phi8*V8;
+
+
+V9=double(V(:,9));
+Phi9=double(Phi9);
+Omega9=Phi9*V9;
+
+V10=double(V(:,10));
+Phi10=double(Phi10);
+Omega10=Phi10*V10;
+
+V11=double(V(:,11));
+Phi11=double(Phi11);
+Omega11=Phi11*V11;
+
+V12=double(V(:,12));
+Phi12=double(Phi12);
+Omega12=Phi12*V12;
+
+V13=double(V(:,13));
+Phi13=double(Phi13);
+Omega13=Phi13*V13;
+
+V14=double(V(:,14));
+Phi14=double(Phi14);
+Omega14=Phi14*V14;
+
+V15=double(V(:,15));
+Phi15=double(Phi15);
+Omega15=Phi15*V15;
+% 
+% V16=double(V(:,16));
+% Phi16=double(Phi16);
+% Omega16=Phi16*V16;
+
+Omega=[Omega1 Omega2 Omega3  Omega4  Omega5  Omega6   Omega7  Omega8   Omega9  Omega10   Omega11  Omega12   Omega13  Omega14   Omega15   ];
+% 
+% 
+% img=(img/(max(max(img))))*255;
+% for h=1:N
+% for k=1:N
+% CV(h,k)=img(h,k)-I(h,k);
+% end
+% end
+% CV=CV;
+% CV=histeq(CV,255);
+% imshow(CV)
+
+
+
+e1=abs(abs(Omega(1))-abs(Omega));
+e1s=sum(e1);
+e2=abs(abs(Omega(2))-abs(Omega));
+e2s=sum(e2);
+e3=abs(abs(Omega(3))-abs(Omega));
+e3s=sum(e3);
+e4=abs(abs(Omega(4))-abs(Omega));
+e4s=sum(e4);
+e5=abs(abs(Omega(5))-abs(Omega));
+e5s=sum(e5);
+e6=abs(abs(Omega(6))-abs(Omega));
+e6s=sum(e6);
+e7=abs(abs(Omega(7))-abs(Omega));
+e7s=sum(e7);
+e8=abs(abs(Omega(8))-abs(Omega));
+e8s=sum(e8);
+e9=abs(abs(Omega(9))-abs(Omega));
+e9s=sum(e9);
+e10=abs(abs(Omega(10))-abs(Omega));
+e10s=sum(e10);
+e11=abs(abs(Omega(11))-abs(Omega));
+e11s=sum(e11);
+e12=abs(abs(Omega(12))-abs(Omega));
+e12s=sum(e12);
+e13=abs(abs(Omega(13))-abs(Omega));
+e13s=sum(e13);
+e14=abs(abs(Omega(14))-abs(Omega));
+e14s=sum(e14);
+e15=abs(abs(Omega(15))-abs(Omega));
+e15s=sum(e15);
+% e16=abs(abs(Omega(16))-abs(Omega));
+% e16s=sum(e16);
+e=[e1s e2s e3s e4s e5s e6s e7s e8s e9s e10s e11s e12s e13s e14s e15s ];
+var(e)
+
+
+
+
+
